@@ -8,8 +8,8 @@ public class Main {
     step = step + 1;
     String castle = "\uD83C\uDFF0";
     int castleY = 1;
-    String[] BoArd;
-    BoArd = new String[sizeBoard];
+    String[][] b0ard;
+    b0ard = new String[sizeBoard];
     for (y = 1; y <= sizeBoard; y++) {
         for (x = 1; x <= sizeBoard; x++);
     }
@@ -17,8 +17,7 @@ public class Main {
         Monster[] monsters = new Monster[countMonster];
         int count = 0;
 
-        Scanner randoM = null;
-        String[][] b0ard = new String[0][];
+        Random randoM = new Random()；
         while (count < countMonster) {
             Monster monster;
 
@@ -57,17 +56,6 @@ public class Main {
                     String person = "Гг";
                     board[(personY - 1) * sizeBoard + personX - 1] = person;
                     Monster monster;
-                    String gamingField = "+ —— + —— + —— + —— + —— +\n"
-                            + "|    |    |    |    |    |\n"
-                            + "+ —— + —— + —— + —— + —— +\n"
-                            + "|    |    |    |    |    |\n"
-                            + "+ —— + —— + —— + —— + —— +\n"
-                            + "|    |    | " + monster + " |    |    |\n"
-                            + "+ —— + —— + —— + —— + —— +\n"
-                            + "|    |    |    |    |    |\n"
-                            + "+ —— + —— + —— + —— + —— +\n"
-                            + "| " + person + " |    |    |    |    |\n"
-                            + "+ —— + —— + —— + —— + —— +";
                     System.out.println("Привет! Ты готов начать играть? (Напиши: ДА или НЕТ)");
                     System.out.println("Количество жизней: " + personLive + " " + person);
                     Scanner scanner = new Scanner(System.in);
