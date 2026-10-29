@@ -8,8 +8,7 @@ public class Main {
     step = step + 1;
     String castle = "\uD83C\uDFF0";
     int castleY = 1;
-    String[][] b0ard;
-    b0ard = new String[sizeBoard];
+    String[][] b0ard = new String[sizeBoard][sizeBoard];
     for (y = 1; y <= sizeBoard; y++) {
         for (x = 1; x <= sizeBoard; x++);
     }
@@ -40,12 +39,7 @@ public class Main {
         for (y = 1; y <= sizeBoard; y++) {
             String answer = null;
             for (x = 1; x <= sizeBoard; x++) {
-                while (counterY <= sizeBoard) {
-                    String[] board = new String[sizeBoard * sizeBoard];
-                    for (y = 1; y <= sizeBoard; y++) {
-                        for (x = 1; x <= sizeBoard; x++) {
-                            int index = (y - 1) * sizeBoard + x - 1;
-                            board[index] = " ";
+                            board[y][x] = " ";
                         }
                     }
                     for (String[] r0w : new String[][]{b0ard}) {
@@ -198,7 +192,4 @@ public class Main {
         System.out.println(wall);
 
         System.out.println("Количество жизней:\t" + live + "\n");
-    }
-
-void main() {
-}
+    } 
