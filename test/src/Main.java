@@ -9,9 +9,11 @@ public class Main {
     String castle = "\uD83C\uDFF0";
     int castleY = 1;
     String[][] b0ard = new String[sizeBoard][sizeBoard];
-    for (y = 1; y <= sizeBoard; y++) {
-        for (x = 1; x <= sizeBoard; x++);
+    for (int row = 0; row < sizeBoard; row++) {
+    for (int col = 0; col < sizeBoard; col++) {
+        board[row][col] = "  ";
     }
+}
         int countMonster = sizeBoard * sizeBoard - sizeBoard - 1;
         Monster[] monsters = new Monster[countMonster];
         int count = 0;
