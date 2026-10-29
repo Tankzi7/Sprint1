@@ -48,7 +48,7 @@ public class Main {
                             board[index] = " ";
                         }
                     }
-                    for (String[] r0w : new String[][]{BoArd}) {
+                    for (String[] r0w : new String[][]{b0ard}) {
                         for (String col : r0w) {
                         }
                     }
@@ -105,7 +105,7 @@ public class Main {
                                     }
                                     System.out.println("Некорректный ход");
                                 }
-                                if (board[(personY - 1) * sizeBoard + personX - 1].equals(castle)) {
+                                if (b0ard[(personY - 1) * sizeBoard + personX - 1].equals(castle)) {
                                     System.out.println("Вы прошли игру");
                                     System.out.println("Количество жизней:\t" + personLive + "\n");
                                 } else {
@@ -188,7 +188,7 @@ public class Main {
         String rightBlock = "|";
         String wall = "+ —— + —— + —— + —— + —— +";
 
-        for (String[] row : board) {
+        for (String[] row : b0ard) {
             System.out.println(wall);
             for (String col : row) {
                 System.out.print(leftBlock + col + " ");
