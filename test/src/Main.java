@@ -18,7 +18,7 @@ public class Main {
         Monster[] monsters = new Monster[countMonster];
         int count = 0;
 
-        Random randoM = new Random()；
+        Random randoM = new Random();
         while (count < countMonster) {
             Monster monster;
 
